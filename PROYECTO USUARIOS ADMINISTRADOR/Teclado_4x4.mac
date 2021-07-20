@@ -1,0 +1,385 @@
+;===============================================================================
+;===================[ TECLADO MATRICIAL 4X4 ]===================================
+
+
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+;=-=-=-=-=-=-=-=-=-=-(MACRO PARA DETECTAR TECLAS)=-=-=-=-=-=-=-=-=-=-=-=-=-
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Teclado_hexadecimal_4x4 MACRO PUERTO, TECLA
+
+Busca_tecla:
+
+	;Busca en FILA 1
+	movlw B'00000001'  ;W <- 0000 0001
+	movwf PUERTO  ;W <- 0000 0001	
+			
+		btfsc PUERTO,4
+			goto Tecla1
+		
+		btfsc PUERTO,5
+			goto Tecla2
+
+		btfsc PUERTO,6
+			goto Tecla3
+
+		btfsc PUERTO,7	
+			goto Tecla4
+		
+	;Busca en FILA 2
+	movlw B'00000010'  ;W <- 0000 0001
+	movwf PUERTO  ;W <- 0000 0010
+
+		btfsc PUERTO,4
+			goto Tecla5
+		
+		btfsc PUERTO,5
+			goto Tecla6
+
+		btfsc PUERTO,6
+			goto Tecla7
+
+		btfsc PUERTO,7	
+			goto Tecla8
+		
+	;Busca en FILA 3
+	movlw B'00000100'  ;W <- 0000 0001
+	movwf PUERTO  ;W <- 0000 0100
+
+		btfsc PUERTO,4
+			goto Tecla9
+		
+		btfsc PUERTO,5
+			goto Tecla10
+
+		btfsc PUERTO,6
+			goto Tecla11
+
+		btfsc PUERTO,7	
+			goto Tecla12		
+	
+	;Busca en FILA 4
+	movlw B'00001000'  ;W <- 0000 0001
+	movwf PUERTO  ;W <- 0000 1000
+		
+		btfsc PUERTO,4
+			goto Tecla13
+		
+		btfsc PUERTO,5
+			goto Tecla14
+
+		btfsc PUERTO,6
+			goto Tecla15
+
+		btfsc PUERTO,7	
+			goto Tecla16		
+	
+	goto Busca_tecla
+
+Tecla1:   ; PARA EL 1
+	movlw .1  ;Guarda el valor de 1 en el registro TECLA 
+	movwf TECLA 
+	goto Termina_busqueda
+
+Tecla2:   ; PARA EL 2
+	movlw .2  ;Guarda el valor de 2 en el registro TECLA 
+	movwf TECLA 
+	goto Termina_busqueda
+
+Tecla3:   ; PARA EL 3
+	movlw .3  ;Guarda el valor de 3 en el registro TECLA 
+	movwf TECLA 
+	goto Termina_busqueda
+
+Tecla4:    ; PARA LA A
+	movlw .10  ;Guarda el valor de 10 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla5:    ; PARA EL 4
+	movlw .4  ;Guarda el valor de 4 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla6:    ; PARA EL 5
+	movlw .5  ;Guarda el valor de 5 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla7:    ; PARA EL 6
+	movlw .6  ;Guarda el valor de 6 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla8:   ; PARA LA B
+	movlw .11  ;Guarda el valor de 11 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla9: ; PARA EL 7
+	movlw .7  ;Guarda el valor de 7 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla10:  ; PARA EL 8
+	movlw .8  ;Guarda el valor de 8 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla11:  ; PARA EL 9
+	movlw .9  ;Guarda el valor de 9 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla12:   ; PARA LA C
+	movlw .12  ;Guarda el valor de 12 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla13:  ; PARA EL *
+	movlw .13  ;Guarda el valor de 13 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla14: ; PARA EL 0
+	movlw .0  ;Guarda el valor de 0 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla15:  ; PARA EL #
+	movlw .14  ;Guarda el valor de 14 en el registro TECLA 
+	movwf TECLA
+	goto Termina_busqueda
+
+Tecla16:  ; PARA LA D
+	movlw .15  ;Guarda el valor de 15 en el registro TECLA 
+	movwf TECLA
+
+Termina_busqueda:
+
+	ENDM
+
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+;=-=-=-=-=-=-=-=-=-=-(MACRO PARA IMPRIMIR TECLAS)=-=-=-=-=-=-=-=-=-=-=-=-=-
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Imprime_tecla MACRO Registro_tecla
+	
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 1
+	
+	SaltaSiVarIgualConst Registro_tecla,.1,Imprime_1
+		goto Identifica_tecla2	
+
+	Imprime_1:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '1'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+	
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 2
+	Identifica_tecla2:
+	SaltaSiVarIgualConst Registro_tecla,.2,Imprime_2
+		goto Identifica_tecla3
+
+	Imprime_2:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '2'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 3
+	Identifica_tecla3:
+	SaltaSiVarIgualConst Registro_tecla,.3,Imprime_3
+		goto Identifica_tecla4	
+
+	Imprime_3:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '3'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+	
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES A
+	Identifica_tecla4:
+	SaltaSiVarIgualConst Registro_tecla,.10,Imprime_4
+		goto Identifica_tecla5	
+
+	Imprime_4:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '+'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+	
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 4
+	Identifica_tecla5:
+	SaltaSiVarIgualConst Registro_tecla,.4,Imprime_5
+		goto Identifica_tecla6	
+
+	Imprime_5:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '4'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+	
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 5
+	Identifica_tecla6:
+	SaltaSiVarIgualConst Registro_tecla,.5,Imprime_6
+		goto Identifica_tecla7
+
+	Imprime_6:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '5'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 6
+	Identifica_tecla7:
+	SaltaSiVarIgualConst Registro_tecla,.6,Imprime_7
+		goto Identifica_tecla8
+
+	Imprime_7:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '6'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES B
+	Identifica_tecla8:
+	SaltaSiVarIgualConst Registro_tecla,.11,Imprime_8
+		goto Identifica_tecla9
+
+	Imprime_8:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '-'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 7
+	Identifica_tecla9:
+	SaltaSiVarIgualConst Registro_tecla,.7,Imprime_9
+		goto Identifica_tecla10
+
+	Imprime_9:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '7'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 8
+	Identifica_tecla10:
+	SaltaSiVarIgualConst Registro_tecla,.8,Imprime_10
+		goto Identifica_tecla11
+
+	Imprime_10:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '8'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 9
+	Identifica_tecla11:
+	SaltaSiVarIgualConst Registro_tecla,.9,Imprime_11
+		goto Identifica_tecla12
+
+	Imprime_11:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '9'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES C
+	Identifica_tecla12:
+	SaltaSiVarIgualConst Registro_tecla,.12,Imprime_12
+		goto Identifica_tecla13
+
+	Imprime_12:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw 'C'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES *
+	Identifica_tecla13:
+	SaltaSiVarIgualConst Registro_tecla,.13,Imprime_13
+		goto Identifica_tecla14
+
+	Imprime_13:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '*'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico	
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES 0
+	Identifica_tecla14:
+	SaltaSiVarIgualConst Registro_tecla,.0,Imprime_14
+		goto Identifica_tecla15
+
+	Imprime_14:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw '0'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES #
+	Identifica_tecla15:
+	SaltaSiVarIgualConst Registro_tecla,.14,Imprime_15
+		goto Identifica_tecla16
+
+	Imprime_15:
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw .32
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico
+
+;**************************************************************************
+	;VERIFICA SI EL NUMERO INTRODUCIDO ES D
+	Identifica_tecla16:
+	SaltaSiVarIgualConst Registro_tecla,.15,Imprime_16
+		goto Delay_generico
+
+	Imprime_16:		
+		bsf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		movlw 'D'
+		call  LCD_Char
+		bcf				Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+		goto Delay_generico
+
+;-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+;   Tiempo que espera para reconocer la siguiente tecla (200 mS)
+
+Delay_generico:
+	call T100mS		; Retardo de tiempo (100 miliSegundos)
+	call T100mS		; Retardo de tiempo (100 miliSegundos)
+	
+;-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+	ENDM

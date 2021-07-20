@@ -1,0 +1,91 @@
+;MACROS EEPROM by MoustachedBird
+
+;IMPORTANTE!!!: EN CASO DE MANEJAR INTERRUPCIONES Y QUERER GRABAR
+;EN LA EEPROM DESCOMENTAR LAS LINEAS DE CODIGO CORRESPONDIENTES EN LAS
+;MACROS DE ESTE DOCUMENTO
+
+banco3 MACRO
+	bsf STATUS,RP1 ;El BIT 6 del Registro 3 se pone a "0"
+	bsf STATUS,RP0 ;El BIT 5 del Registro 3 se pone a "1"
+	ENDM
+
+banco2 MACRO
+	bsf STATUS,RP1 ;El BIT 6 del Registro 3 se pone a "0"
+	bcf STATUS,RP0 ;El BIT 5 del Registro 3 se pone a "1"
+	ENDM
+
+banco1 MACRO
+	bcf STATUS,RP1 ;El BIT 6 del Registro 3 se pone a "0"
+	bsf STATUS,RP0 ;El BIT 5 del Registro 3 se pone a "1"
+	ENDM
+
+banco0 MACRO
+	bcf STATUS,RP1 ;El BIT 6 del Registro 3 se pone a "0"
+	bcf STATUS,RP0 ;El BIT 5 del Registro 3 se pone a "1"
+	ENDM
+
+;La direccion de la EEPROM del PIC16F877A puede ir de 
+;0x0000 a 0x1FFF
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;Macro para escribir una literal (valor numerico) en la EEPROM
+WRITE_EEPROMlit MACRO direccion,numero
+		banco2
+		movlw numero
+		movwf	EEDATA		;DATO = numero
+		movlw direccion
+		movwf	EEADR		;DIRECCION=direccion
+  		banco3			;HABILITA EL BANCO 3
+		bcf	EECON1,EEPGD	;APUNTA HACIA EEPROM DE DATOS		
+		bsf	EECON1,WREN	;HABILITA ESCRITURA EN EEPROM
+		;bcf INTCON, GIE     	;DESHABILITA INTERRUPCIONES (solo cuando haya interrupciones)    
+		movlw	H'55'		;PREPARA SECUENCIA DE SEGURIDAD
+		movwf	EECON2		;ESCRIBE PRIMER DATO DE SECUENCIA
+		movlw	H'AA'		;SEGUNDO DATO
+		movwf	EECON2		;ESCRIBE SEGUNDO DATO DE SECUENCIA
+		bsf	EECON1,WR	;INICIA CICLO DE ESCRITURA
+		btfsc   EECON1,WR       ;MALLA PARA ESPERAR AL FINAL DEL CICLO
+    	goto    $-1              ;SI WR=1, CICLO DE ESCRITURA AUN NO TERMINA (regresa a la linea anterior)
+		bcf     EECON1, WREN    ;DESHABILITA ESCRITURA
+		;bsf    	INTCON, GIE     ;HABILITA INTERRUPCIONES  (descomentar cuando haya interrupciones)   		
+		banco0
+ENDM
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;Macro para escribir una variable (registro) en la EEPROM
+WRITE_EEPROMvar MACRO direccion,reg
+		banco2
+		movfw reg			
+		movwf	EEDATA		;DATO = reg
+		movlw direccion
+		movwf	EEADR		;DIRECCION=direccion
+  		banco3			;HABILITA EL BANCO 3
+		bcf	EECON1,EEPGD	;APUNTA HACIA EEPROM DE DATOS		
+		bsf	EECON1,WREN	;HABILITA ESCRITURA EN EEPROM
+		;bcf INTCON, GIE     	;DESHABILITA INTERRUPCIONES (solo cuando haya interrupciones)    
+		movlw	H'55'		;PREPARA SECUENCIA DE SEGURIDAD
+		movwf	EECON2		;ESCRIBE PRIMER DATO DE SECUENCIA
+		movlw	H'AA'		;SEGUNDO DATO
+		movwf	EECON2		;ESCRIBE SEGUNDO DATO DE SECUENCIA
+		bsf	EECON1,WR	;INICIA CICLO DE ESCRITURA
+		btfsc   EECON1,WR       ;MALLA PARA ESPERAR AL FINAL DEL CICLO
+    	goto    $-1              ;SI WR=1, CICLO DE ESCRITURA AUN NO TERMINA (regresa a la linea anterior)
+		bcf     EECON1, WREN    ;DESHABILITA ESCRITURA
+		;bsf    	INTCON, GIE     ;HABILITA INTERRUPCIONES  (descomentar cuando haya interrupciones)   		
+		banco0
+ENDM
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;Macro para leer una direccion de la EEPROM y almacenar en en registro
+READ_EEPROM MACRO direccion,reg
+		banco2
+		movlw direccion
+		movwf	EEADR		;DIRECCION=direccion
+  		banco3
+		bcf	EECON1,EEPGD		;APUNTA HACIA EEPROM DE DATOS		
+		bsf	EECON1,RD		;HABILITA EL BIT 0 (RD) DEL REGISTRO EECON1		
+		banco2
+		movf	EEDATA,W		;TRANSFIERE EL DATO EN EEDATA A W,
+		banco0
+		movwf reg
+ENDM

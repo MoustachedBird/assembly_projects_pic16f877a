@@ -1,0 +1,175 @@
+;MACROS SALTA_SI by MoustachedBird (beta)
+
+;-----[ Macro Load ]-----
+; Carga un valor en una variables
+Load	MACRO	Var,Valor
+	movlw	Valor	; Toma el valor de la literal
+	movwf	Var  	; Trasládalo a la FSR, puede ser un Puerto, Variable, Etc.
+	ENDM
+	; Alias para el MACRO anterior:
+	#DEFINE	carga Load
+
+;-----[ Macro llena ]-----
+; Carga un valor en una variables
+llena	MACRO	Var1,Var2
+	movfw	Var2	; Toma el valor de la literal
+	movwf	Var1  	; Trasládalo a la FSR, puede ser un Puerto, Variable, Etc.
+	ENDM
+
+;-----[ Macro imprime variable]-----
+; imprime una variable
+imprimevar	MACRO	Var
+	movfw	Var	; 
+	movwf   general_lcd
+	bsf	Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+	movfw general_lcd
+	call  LCD_Char
+
+	ENDM
+
+;-----[ Macro imprime literal]-----
+; imprime una variable
+imprimelit	MACRO	Lit
+	movlw	Lit	; 
+	movwf   general_lcd
+	bsf	Select,Pin_RS	; Selección del MODO de DATOS; RS <- "1" 
+	movfw general_lcd
+	call  LCD_Char
+
+	ENDM
+
+
+;==============================================================================
+;===========================[ VARIABLE - LITERAL ]=============================
+;==============================================================================
+
+SaltaSiVarIgualConst	MACRO	Registro1_m1, Constante1_m1, Salto_m1
+	movlw	Constante1_m1	; Se emplea la resta para la comparación.
+	subwf	Registro1_m1,W	; (W)=(Registro1_m1) - Constante_m1
+	btfsc	STATUS,Z		; ¿Z=0?, ¿son distintos? si son distintos sal de la macro
+		goto	Salto_m1	; Si Z=1 son iguales, por lo tanto salta  
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarDiferenteConst	MACRO	Registro1_m2, Constante1_m2, Salto_m2
+	movlw	Constante1_m2	; Se emplea la resta para la comparación.
+	subwf	Registro1_m2,W	; (W)=(Registro1_m2) - Constante_m2
+	btfss	STATUS,Z		; ¿Z=1?, ¿Son iguales? si son iguales sal de la macro
+	goto	Salto_m2		; Si Z=0 son diferentes, por lo tanto salta
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMayorConst	MACRO	Registro1_m3, Constante1_m3, Salto_m3
+	movlw	Constante1_m3	; Se emplea la resta para la comparación.
+	subwf	Registro1_m3,W	; (W)=(Registro1_m3) - Constante_m3
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+		goto ComprobarBanderaZ_m3 ;Si no hubo bit de prestamo puede ser igual o mayor por lo tanto comprueba bandera de 0
+	goto Salir_m3 ;Si hubo bit de prestamo, es menor, sale de la macro
+
+	ComprobarBanderaZ_m3:
+		btfss	STATUS,Z		;Si la Bandera Z de STATUS es 1, son iguales
+			goto	Salto_m3		; La bandera Z es 0, por lo tanto es mayor
+	
+	Salir_m3: ; Para Salir de la macro en caso de que ninguna opción se cumpla
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMenorConst	MACRO	Registro1_m4, Constante1_m4, Salto_m4
+	movlw	Constante1_m4	; Se emplea la resta para la comparación.
+	subwf	Registro1_m4,0	; (W)=(Registro1_m4) - Constante_m4
+	btfss	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+	goto	Salto_m4		; Si hubo bit de prestamo por lo tanto es menor
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMayorIgualConst	MACRO	Registro1_m5, Constante1_m5, Salto_m5
+	movlw	Constante1_m5	; Se emplea la resta para la comparación.
+	subwf	Registro1_m5,0	; (W)=(Registro1_m5) - Constante_m5
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+	goto	Salto_m5		; No hubo bit de prestamo por lo tanto es mayor
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMenorIgualConst	MACRO	Registro1_m6, Constante1_m6, Salto_m6
+	movlw	Constante1_m6	; Se emplea la resta para la comparación.
+	subwf	Registro1_m6,W	; (W)=(Registro1_m6) - Constante_m6
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+		goto Salir_m6 ;No hubo bit de prestamo por lo tanto sale de la macro
+	
+	Si_es_menor_m6:
+		goto	Salto_m6		; La bandera Z es 0, por lo tanto es mayor
+	
+	Salir_m6: ; Para Salir de la macro en caso de que ninguna opción se cumpla
+		btfsc	STATUS,Z		;Si la Bandera Z de STATUS es 1,  son iguales
+			goto	Salto_m6		; Si no son iguales, entonces sal de la macro
+
+	ENDM
+
+;==============================================================================
+;==========================[ VARIABLE - VARIABLE ]=============================
+;==============================================================================
+
+SaltaSiVarIgualVar	MACRO	Registro1_m7, Registro2_m7, Salto_m7
+	movfw	Registro2_m7 	; Se emplea la resta para la comparación.
+	subwf	Registro1_m7,W	; (W)=(Registro1_m7) - Constante_m7
+	btfsc	STATUS,Z		; ¿Z=0?, ¿son distintos? si son distintos sal de la macro
+		goto	Salto_m7	; Si Z=1 son iguales, por lo tanto salta  
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarDiferenteVar	MACRO	Registro1_m8, Registro2_m8, Salto_m8
+	movfw	Registro2_m8	; Se emplea la resta para la comparación.
+	subwf	Registro1_m8,W	; (W)=(Registro1_m8) - Constante_m8
+	btfss	STATUS,Z		; ¿Z=1?, ¿Son iguales? si son iguales sal de la macro
+	goto	Salto_m8		; Si Z=0 son diferentes, por lo tanto salta
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMayorVar	MACRO	Registro1_m9, Registro2_m9, Salto_m9
+	movfw	Registro2_m9	; Se emplea la resta para la comparación.
+	subwf	Registro1_m9,W	; (W)=(Registro1_m9) - Constante_m9
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+		goto ComprobarBanderaZ_m9 ;Si no hubo bit de prestamo puede ser igual o mayor por lo tanto comprueba bandera de 0
+	goto Salir_m9 ;Si hubo bit de prestamo, es menor, sale de la macro
+
+	ComprobarBanderaZ_m9:
+		btfss	STATUS,Z		;Si la Bandera Z de STATUS es 1, son iguales
+			goto	Salto_m9		; La bandera Z es 0, por lo tanto es mayor
+	
+	Salir_m9: ; Para Salir de la macro en caso de que ninguna opción se cumpla
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMenorVar	MACRO	Registro1_m10, Registro2_m10, Salto_m10
+	movfw	Registro2_m10	; Se emplea la resta para la comparación.
+	subwf	Registro1_m10,W	; (W)=(Registro1_m10) - Constante_m10
+	btfss	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+	goto	Salto_m10		; Si hubo bit de prestamo por lo tanto es menor
+	ENDM
+;-----------------------------------------------------------------------------
+SaltaSiVarMayorIgualVar	MACRO	Registro1_m11, Registro2_m11, Salto_m11
+	movfw	Registro2_m11	; Se emplea la resta para la comparación.
+	subwf	Registro1_m11,W	; (W)=(Registro1_m11) - Constante_m11
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+	goto	Salto_m11		; No hubo bit de prestamo por lo tanto es mayor
+	ENDM
+
+;-----------------------------------------------------------------------------
+SaltaSiVarMenorIgualVar	MACRO	Registro1_m12, Registro2_m12, Salto_m12
+	movfw	Registro2_m12	; Se emplea la resta para la comparación.
+	subwf	Registro1_m12,W	; (W)=(Registro1_m6) - Constante_m6
+	btfsc	STATUS,C		; ¿Carry=1? Si Carry=0 hubo prestamo y si Carry=1 no hubo prestamo
+		goto Salir_m12 ;No hubo bit de prestamo por lo tanto sale de la macro
+	
+Si_es_menor_m12:
+		goto	Salto_m12		; La bandera Z es 0, por lo tanto es mayor
+	
+Salir_m12: ; Para Salir de la macro en caso de que ninguna opción se cumpla
+		btfsc	STATUS,Z		;Si la Bandera Z de STATUS es 1,  son iguales
+			goto	Salto_m12		; Si no son iguales, entonces sal de la macro
+
+	ENDM
+
+;==============================================================================
+;==============================================================================
+;==============================================================================

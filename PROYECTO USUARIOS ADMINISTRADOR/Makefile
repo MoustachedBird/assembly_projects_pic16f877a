@@ -1,0 +1,19 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: LaboratorioAutomatico.mcp
+# Date: Fri Jun 28 00:23:48 2019
+
+AS = MPASMWIN.exe
+CC = 
+LD = mplink.exe
+AR = mplib.exe
+RM = rm
+
+automatizacion.cof : automatizacion.o
+	$(CC) /p16F877A "automatizacion.o" /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /o"automatizacion.cof" /M"automatizacion.map" /W /x
+
+automatizacion.o : automatizacion.asm ../../../../../../../Program\ Files\ (x86)/Microchip/MPASM\ Suite/P16F877A.INC SelBank.mac Macros_LCD.mac SaltaSiMacros.mac EEPROM.mac Teclado.mac LCD_4Bits_PORTB.h LCD_4Bits_PORTB.inc Tiempo.inc
+	$(AS) /q /p16F877A "automatizacion.asm" /l"automatizacion.lst" /e"automatizacion.err" /d__DEBUG=1
+
+clean : 
+	$(CC) "automatizacion.o" "automatizacion.hex" "automatizacion.err" "automatizacion.lst" "automatizacion.cof"
+

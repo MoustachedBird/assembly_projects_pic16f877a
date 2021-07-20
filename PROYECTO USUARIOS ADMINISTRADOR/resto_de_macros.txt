@@ -1,0 +1,234 @@
+
+menu0 MACRO
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	; INGRESE USUARIO
+	imprimelit 'M'  ;1
+	imprimelit 'E'  ;2
+	imprimelit 'N'  ;3
+	imprimelit 'U'  ;4
+	imprimelit ' '  ;5
+	imprimelit 'P'  ;6
+	imprimelit 'R'  ;7
+	imprimelit 'I'  ;8
+	imprimelit 'N'  ;9
+	imprimelit 'C'  ;10
+	imprimelit 'I'  ;11
+	imprimelit 'P'  ;12
+	imprimelit 'A'  ;13
+	imprimelit 'L'  ;14
+	imprimelit ' '  ;15
+	imprimelit ' '  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;4 digitos: NNNN 
+	imprimelit '1'  ;1
+	imprimelit '='  ;2
+	imprimelit 'A'  ;3
+	imprimelit 'D'  ;4
+	imprimelit 'M'  ;5
+	imprimelit 'I'  ;6
+	imprimelit 'N'  ;7
+	imprimelit ' '  ;8
+	imprimelit '2'  ;9
+	imprimelit '='  ;10
+	imprimelit 'U'  ;11
+	imprimelit 'S'  ;12
+	imprimelit 'U'  ;13
+	imprimelit 'A'  ;14
+	imprimelit 'R'  ;15
+	imprimelit 'I'  ;16
+	ENDM
+
+menu1 MACRO
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	; INGRESE USUARIO
+	imprimelit '1'  ;1
+	imprimelit '='  ;2
+	imprimelit 'C'  ;3
+	imprimelit 'A'  ;4
+	imprimelit 'M'  ;5
+	imprimelit 'B'  ;6
+	imprimelit 'I'  ;7
+	imprimelit 'A'  ;8
+	imprimelit 'R'  ;9
+	imprimelit ' '  ;10
+	imprimelit 'C'  ;11
+	imprimelit 'L'  ;12
+	imprimelit 'A'  ;13
+	imprimelit 'V'  ;14
+	imprimelit 'E'  ;15
+	imprimelit 'S'  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;4 digitos: NNNN 
+	imprimelit '1'  ;1
+	imprimelit '='  ;2
+	imprimelit 'A'  ;3
+	imprimelit 'C'  ;4
+	imprimelit 'C'  ;5
+	imprimelit 'E'  ;6
+	imprimelit 'S'  ;7
+	imprimelit 'O'  ;8
+	imprimelit 'S'  ;9
+	imprimelit ' '  ;10
+	imprimelit '#'  ;11
+	imprimelit '='  ;12
+	imprimelit 'M'  ;13
+	imprimelit 'E'  ;14
+	imprimelit 'N'  ;15
+	imprimelit 'U'  ;16
+	ENDM
+
+menu2 MACRO
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	; INGRESE USUARIO
+	imprimelit ' '  ;1
+	imprimelit 'I'  ;2
+	imprimelit 'N'  ;3
+	imprimelit 'G'  ;4
+	imprimelit 'R'  ;5
+	imprimelit 'E'  ;6
+	imprimelit 'S'  ;7
+	imprimelit 'E'  ;8
+	imprimelit ' '  ;9
+	imprimelit 'S'  ;10
+	imprimelit 'A'  ;11
+	imprimelit 'L'  ;12
+	imprimelit 'A'  ;13
+	imprimelit ' '  ;14
+	imprimelit ' '  ;15
+	imprimelit ' '  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;4 digitos: NNNN 
+	imprimelit '('  ;1
+	imprimelit '1'  ;2
+	imprimelit ' '  ;3
+	imprimelit 'a'  ;4
+	imprimelit ' '  ;5
+	imprimelit '4'  ;6
+	imprimelit ')'  ;7
+	imprimelit ' '  ;8
+	imprimelit ' '  ;9
+	imprimelit ' '  ;10
+	imprimelit '#'  ;11
+	imprimelit '='  ;12
+	imprimelit 'M'  ;13
+	imprimelit 'E'  ;14
+	imprimelit 'N'  ;15
+	imprimelit 'U'  ;16
+	ENDM
+
+
+menu3o4 MACRO
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	; INGRESE USUARIO
+	imprimelit ' '  ;1
+	imprimelit 'I'  ;2
+	imprimelit 'N'  ;3
+	imprimelit 'G'  ;4
+	imprimelit 'R'  ;5
+	imprimelit 'E'  ;6
+	imprimelit 'S'  ;7
+	imprimelit 'E'  ;8
+	imprimelit ' '  ;9
+	imprimelit 'U'  ;10
+	imprimelit 'S'  ;11
+	imprimelit 'U'  ;12
+	imprimelit 'A'  ;13
+	imprimelit 'R'  ;14
+	imprimelit 'I'  ;15
+	imprimelit 'O'  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;4 digitos: NNNN 
+	imprimelit '('  ;1
+	imprimelit '1'  ;2
+	imprimelit ' '  ;3
+	imprimelit 'a'  ;4
+	imprimelit ' '  ;5
+	imprimelit '5'  ;6
+	imprimelit ')'  ;7
+	imprimelit ' '  ;8
+	imprimelit ' '  ;9
+	imprimelit ' '  ;10
+	imprimelit '#'  ;11
+	imprimelit '='  ;12
+	imprimelit 'M'  ;13
+	imprimelit 'E'  ;14
+	imprimelit 'N'  ;15
+	imprimelit 'U'  ;16
+	ENDM
+
+
+IDENTIFICA_USUARIO2: 
+	READ_EEPROM .0,aux_eeprom1
+	READ_EEPROM .1,aux_eeprom2
+	READ_EEPROM .2,aux_eeprom3
+	READ_EEPROM .3,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_user2
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_user2
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_user2
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_user2
+	carga usuario,'1'
+	goto B_final_users
+B_user2:
+	READ_EEPROM .4,aux_eeprom1
+	READ_EEPROM .5,aux_eeprom2
+	READ_EEPROM .6,aux_eeprom3
+	READ_EEPROM .7,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_user3
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_user3
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_user3
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_user3
+	carga usuario,'2'
+	goto B_final_users
+B_user3:
+	READ_EEPROM .8,aux_eeprom1
+	READ_EEPROM .9,aux_eeprom2
+	READ_EEPROM .10,aux_eeprom3
+	READ_EEPROM .11,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_user4
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_user4
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_user4
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_user4
+	carga usuario,'3'
+	goto B_final_users
+B_user4:
+	READ_EEPROM .12,aux_eeprom1
+	READ_EEPROM .13,aux_eeprom2
+	READ_EEPROM .14,aux_eeprom3
+	READ_EEPROM .15,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_user5
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_user5
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_user5
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_user5
+	carga usuario,'4'
+	goto B_final_users
+B_user5:
+	READ_EEPROM .16,aux_eeprom1
+	READ_EEPROM .17,aux_eeprom2
+	READ_EEPROM .18,aux_eeprom3
+	READ_EEPROM .19,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_userA
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_userA
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_userA
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_userA
+	carga usuario,'5'
+	goto B_final_users
+B_userA:
+	READ_EEPROM .20,aux_eeprom1
+	READ_EEPROM .21,aux_eeprom2
+	READ_EEPROM .22,aux_eeprom3
+	READ_EEPROM .23,aux_eeprom4
+	SaltaSiVarDiferenteVar d1,aux_eeprom1,B_Rechaza
+	SaltaSiVarDiferenteVar d2,aux_eeprom2,B_Rechaza
+	SaltaSiVarDiferenteVar d3,aux_eeprom3,B_Rechaza
+	SaltaSiVarDiferenteVar d4,aux_eeprom4,B_Rechaza
+	carga usuario,'A'
+	goto B_final_users
+B_Rechaza:
+	clrf usuario
+B_final_users:
+	clrf aux_eeprom1
+	clrf aux_eeprom2
+	clrf aux_eeprom3
+	clrf aux_eeprom4
+	goto regresa_IDENTIFICA_USUARIO2
+

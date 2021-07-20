@@ -1,0 +1,265 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Mon Jul 01 03:59:36 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00085a
+.config_2007_AUTOMATIZACION.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00042c      
+                            0x002007    0x002007      
+            1070 out of 8454 program addresses used, program memory utilization is 12%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 Adigito1   0x0000dc    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Adigito2   0x0000df    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Adigito3   0x0000e2    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+            Afinaldigitos   0x000116    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito1   0x00012d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito2   0x000130    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito3   0x000133    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+            Bfinaldigitos   0x000167    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+              Bfinalsmenu   0x0000c5    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  Bsmenu1   0x0000c0    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  Bsmenu2   0x0000c3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             Continua_ADC   0x000057    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+        Continua_division   0x000413    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+          Convertir_a_BCD   0x0002c8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Division   0x00040e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                     EERD   0x000317    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                     EEWR   0x000308    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                       EW   0x000311    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Espera   0x000058    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Inicio   0x000054    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                      L01   0x0003a1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L02   0x0003a3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L03   0x0003ad    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L04   0x0003af    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L05   0x0003b8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L06   0x0003ba    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L07   0x0003c9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L08   0x0003cb    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L09   0x0003cd    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L10   0x0003d8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L11   0x0003da    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L12   0x0003dc    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                 LCD_Byte   0x00037d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+         LCD_ByteCompleto   0x000384    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+             LCD_Caracter   0x000357    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                 LCD_Char   0x000326    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+          LCD_CodigoCGROM   0x00035a    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                  LCD_Com   0x000354    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+   LCD_DosEspaciosBlancos   0x000374    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_EnheMayuscula   0x000361    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_EnheMinuscula   0x00035b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+         LCD_EnviaBlancos   0x000377    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+       LCD_EnviaByteLetra   0x000390    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+      LCD_EnviaOtroBlanco   0x000378    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+             LCD_FinCGROM   0x00036e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+   LCD_FinVisualizaDigito   0x000392    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                LCD_Grado   0x000368    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+               LCD_Inicio   0x000336    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_LineaEnBlanco   0x000370    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+               LCD_Nibble   0x000388    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+  LCD_TresEspaciosBlancos   0x000376    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+      LCD_UnEspacioBlanco   0x000372    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_VisualizaAlto   0x000385    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_VisualizaBajo   0x000387    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+              LEE_MAX_MIN   0x0002e3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  NoTecla   0x000169    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento1   0x0003ed    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento2   0x0003f1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento3   0x0003f9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             Proceso_LM35   0x000054    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   PulseE   0x000321    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                    Resta   0x000400    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m121   0x000181    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m122   0x000189    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m123   0x000191    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  SendCom   0x000354    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                     Suma   0x0003e7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   T100mS   0x0003b6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                   T100uS   0x00039a    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     T10S   0x0003d6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                    T10mS   0x0003ab    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                    T10uS   0x000395    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      T1S   0x0003c7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     T1mS   0x00039f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     T1uS   0x000393    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                   Tecla0   0x0001c9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla1   0x000197    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla2   0x00019c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla3   0x0001a1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla4   0x0001a6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla5   0x0001ab    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla6   0x0001b0    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla7   0x0001b5    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla8   0x0001ba    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla9   0x0001bf    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaC   0x0001c4    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaD   0x0001d3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaF   0x0001ce    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+         Termina_division   0x000426    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+          Termina_teclado   0x0000a6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+            continua_prog   0x00004f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  control   0x00016b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   dmayor   0x00016f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   dmenor   0x000184    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu0   0x000079    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu0_2   0x0000b7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu1   0x00007b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu1_2   0x0000c6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu2   0x00007d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu2_2   0x000117    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                fin_ident   0x000196    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               finalmenus   0x00007e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             finalmenus_2   0x000167    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+         identifica_menor   0x00017c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_maxA   0x000108    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_maxB   0x000159    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_minA   0x00010f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_minB   0x000160    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 m_princA   0x000102    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 m_princB   0x000153    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu0   0x0001d8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu1   0x000228    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu2   0x000278    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             superamaximo   0x000179    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             superaminimo   0x000194    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   umayor   0x000174    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   umenor   0x00018c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+            continua_prog   0x00004f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Inicio   0x000054    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             Proceso_LM35   0x000054    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             Continua_ADC   0x000057    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Espera   0x000058    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu0   0x000079    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu1   0x00007b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   emenu2   0x00007d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               finalmenus   0x00007e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+          Termina_teclado   0x0000a6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu0_2   0x0000b7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  Bsmenu1   0x0000c0    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  Bsmenu2   0x0000c3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+              Bfinalsmenu   0x0000c5    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu1_2   0x0000c6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Adigito1   0x0000dc    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Adigito2   0x0000df    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Adigito3   0x0000e2    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 m_princA   0x000102    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_maxA   0x000108    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_minA   0x00010f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+            Afinaldigitos   0x000116    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 emenu2_2   0x000117    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito1   0x00012d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito2   0x000130    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Bdigito3   0x000133    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 m_princB   0x000153    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_maxB   0x000159    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   m_minB   0x000160    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+            Bfinaldigitos   0x000167    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             finalmenus_2   0x000167    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  NoTecla   0x000169    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                  control   0x00016b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   dmayor   0x00016f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   umayor   0x000174    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             superamaximo   0x000179    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+         identifica_menor   0x00017c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m121   0x000181    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   dmenor   0x000184    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m122   0x000189    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   umenor   0x00018c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+               Salir_m123   0x000191    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+             superaminimo   0x000194    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                fin_ident   0x000196    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla1   0x000197    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla2   0x00019c    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla3   0x0001a1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla4   0x0001a6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla5   0x0001ab    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla6   0x0001b0    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla7   0x0001b5    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla8   0x0001ba    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla9   0x0001bf    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaC   0x0001c4    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   Tecla0   0x0001c9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaF   0x0001ce    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   TeclaD   0x0001d3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu0   0x0001d8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu1   0x000228    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    menu2   0x000278    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+          Convertir_a_BCD   0x0002c8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+              LEE_MAX_MIN   0x0002e3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                     EEWR   0x000308    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                       EW   0x000311    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                     EERD   0x000317    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                   PulseE   0x000321    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                 LCD_Char   0x000326    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+               LCD_Inicio   0x000336    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                  SendCom   0x000354    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                  LCD_Com   0x000354    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+             LCD_Caracter   0x000357    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+          LCD_CodigoCGROM   0x00035a    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_EnheMinuscula   0x00035b    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_EnheMayuscula   0x000361    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                LCD_Grado   0x000368    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+             LCD_FinCGROM   0x00036e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_LineaEnBlanco   0x000370    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+      LCD_UnEspacioBlanco   0x000372    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+   LCD_DosEspaciosBlancos   0x000374    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+  LCD_TresEspaciosBlancos   0x000376    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+         LCD_EnviaBlancos   0x000377    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+      LCD_EnviaOtroBlanco   0x000378    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                 LCD_Byte   0x00037d    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+         LCD_ByteCompleto   0x000384    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_VisualizaAlto   0x000385    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+        LCD_VisualizaBajo   0x000387    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+               LCD_Nibble   0x000388    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+       LCD_EnviaByteLetra   0x000390    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+   LCD_FinVisualizaDigito   0x000392    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4Bits_PORTB.inc
+                     T1uS   0x000393    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                    T10uS   0x000395    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                   T100uS   0x00039a    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     T1mS   0x00039f    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L01   0x0003a1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L02   0x0003a3    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                    T10mS   0x0003ab    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L03   0x0003ad    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L04   0x0003af    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                   T100mS   0x0003b6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L05   0x0003b8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L06   0x0003ba    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      T1S   0x0003c7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L07   0x0003c9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L08   0x0003cb    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L09   0x0003cd    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     T10S   0x0003d6    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L10   0x0003d8    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L11   0x0003da    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                      L12   0x0003dc    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\Tiempo.inc
+                     Suma   0x0003e7    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento1   0x0003ed    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento2   0x0003f1    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+           No_incremento3   0x0003f9    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                    Resta   0x000400    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+                 Division   0x00040e    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+        Continua_division   0x000413    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+         Termina_division   0x000426    program     static C:\Users\yeucl\Desktop\Bussines\PIC CONTROL TEMPERATURA\ASM PIC16F877A\automatizacion.asm
+
+

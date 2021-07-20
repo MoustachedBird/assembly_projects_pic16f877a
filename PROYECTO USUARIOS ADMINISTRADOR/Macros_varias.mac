@@ -1,0 +1,80 @@
+menu5 MACRO
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	;INGRESE 4 DIGTOS
+	imprimelit 'I'  ;1
+	imprimelit 'N'  ;2
+	imprimelit 'G'  ;3
+	imprimelit 'R'  ;4
+	imprimelit 'E'  ;5
+	imprimelit 'S'  ;6
+	imprimelit 'E'  ;7
+	imprimelit ' '  ;8
+	imprimelit '4'  ;9
+	imprimelit ' '  ;10
+	imprimelit 'D'  ;11
+	imprimelit 'I'  ;12
+	imprimelit 'G'  ;13
+	imprimelit 'T'  ;14
+	imprimelit 'O'  ;15
+	imprimelit 'S'  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;LETRERO RARO QUE NO PIENSO ESCRIBIR JEJE
+	imprimelit ' '  ;1
+	imprimelit ' '  ;2
+	imprimelit ' '  ;3
+	imprimelit ' '  ;4
+	imprimelit ' '  ;5
+	imprimevar d1  ;6
+	imprimevar d2  ;7
+	imprimevar d3  ;8
+	imprimevar d4  ;9
+	imprimelit ' '  ;10
+	imprimelit ' '  ;11
+	imprimelit ' '  ;12
+	imprimelit ' '  ;13
+	imprimelit ' '  ;14
+	imprimelit ' '  ;15
+	imprimelit ' '  ;16
+	ENDM
+
+menu6 MACRO
+	goto LEE_SALAS_EEPROM
+regresa_LEE_SALAS_EEPROM:
+	LCD_GoTo  0,0	; Pasa a la columna "0", Línea "0"	
+	;CONF(1-4) #M *AD
+	imprimelit 'C'  ;1
+	imprimelit 'O'  ;2
+	imprimelit 'N'  ;3
+	imprimelit 'F'  ;4
+	imprimelit '('  ;5
+	imprimelit '1'  ;6
+	imprimelit '-'  ;7
+	imprimelit '4'  ;8
+	imprimelit ')'  ;9
+	imprimelit ' '  ;10
+	imprimelit '#'  ;11
+	imprimelit 'M'  ;12
+	imprimelit ' '  ;13
+	imprimelit '*'  ;14
+	imprimelit 'A'  ;15
+	imprimelit 'D'  ;16
+	LCD_GoTo  0,1; Pasa a la columna "0", Línea "1"
+	;LETRERO RARO QUE NO PIENSO ESCRIBIR JEJE
+	imprimelit 'U'  ;1
+	imprimelit 's'  ;2
+	imprimelit ':'  ;3
+	imprimevar usuario  ;4
+	imprimelit ' '  ;5
+	imprimelit '1'  ;6
+	imprimevar d1  ;7
+	imprimelit ' '  ;8
+	imprimelit '2'  ;9
+	imprimevar d2  ;10
+	imprimelit ' '  ;11
+	imprimelit '3'  ;12
+	imprimevar d3  ;13
+	imprimelit ' '  ;14
+	imprimelit '4'  ;15
+	imprimevar d4  ;16
+	ENDM
+	

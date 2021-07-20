@@ -1,0 +1,194 @@
+Multiplexea_tecla MACRO
+		;Busca en FILA 1
+	movlw B'00000001'  ;W <- 0000 0001
+	movwf PORTD  ;PORTD <- 0000 0001	
+		
+		btfsc PORTD,4
+			goto Tecla1
+		
+		btfsc PORTD,5
+			goto Tecla2
+
+		btfsc PORTD,6
+			goto Tecla3
+
+		btfsc PORTD,7	
+			goto TeclaA
+		
+	;Busca en FILA 2
+	movlw B'00000010'  ;W <- 0000 0010
+	movwf PORTD  ;PORTD <- 0000 0010
+
+		btfsc PORTD,4
+			goto Tecla4
+		
+		btfsc PORTD,5
+			goto Tecla5
+
+		btfsc PORTD,6
+			goto Tecla6
+
+		btfsc PORTD,7	
+			goto TeclaB
+		
+	;Busca en FILA 3
+	movlw B'00000100'  ;W <- 0000 0100
+	movwf PORTD  ;PORTD <- 0000 0100
+
+		btfsc PORTD,4
+			goto Tecla7
+		
+		btfsc PORTD,5
+			goto Tecla8
+
+		btfsc PORTD,6
+			goto Tecla9
+
+		btfsc PORTD,7	
+			goto TeclaC		
+	
+	;Busca en FILA 4
+	movlw B'00001000'  ;W <- 0000 1000
+	movwf PORTD  ;PORTD <- 0000 1000
+	
+		btfsc PORTD,4
+			goto Tecla_asterisco
+		
+		btfsc PORTD,5
+			goto Tecla0
+
+		btfsc PORTD,6
+			goto Tecla#
+
+		btfsc PORTD,7	
+			goto TeclaD	
+
+Termina_teclado:	
+ENDM
+
+
+Graba_Tecla MACRO
+Tecla1: 
+	call T100mS 
+	call T100mS 
+	movlw '1'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla2:   
+	call T100mS 
+	call T100mS 
+	movlw '2'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla3:   
+	call T100mS 
+	call T100mS 
+	movlw '3'
+	movwf almacenaje
+	goto Termina_teclado
+
+TeclaA: 
+	call T100mS 
+	call T100mS   
+	movlw 'A'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla4:   
+	call T100mS 
+	call T100mS 
+	movlw '4'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla5:   
+	call T100mS 
+	call T100mS 
+	movlw '5'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla6:   
+	call T100mS 
+	call T100mS 
+	movlw '6'
+	movwf almacenaje
+	goto Termina_teclado
+	
+TeclaB:   
+	call T100mS 
+	call T100mS 
+	movlw 'B'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla7:   
+	call T100mS 
+	call T100mS 
+	movlw '7'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla8:   
+	call T100mS 
+	call T100mS 
+	movlw '8'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla9:   
+	call T100mS 
+	call T100mS 
+	movlw '9'
+	movwf almacenaje
+	goto Termina_teclado
+
+TeclaC:   
+	call T100mS 
+	call T100mS 
+	movlw 'C'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla_asterisco:
+	call T100mS 
+	call T100mS    
+	movlw '*'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla0:   
+	call T100mS 
+	call T100mS 
+	movlw '0'
+	movwf almacenaje
+	goto Termina_teclado
+
+Tecla#:   
+	call T100mS 
+	call T100mS 
+	movlw '#'
+	movwf almacenaje
+	goto Termina_teclado
+
+TeclaD:   
+	call T100mS 
+	call T100mS 
+	movlw 'D'
+	movwf almacenaje
+	goto Termina_teclado
+
+ENDM
+
+Detecta_sensor MACRO
+	btfsc PORTC,7
+	goto enciende
+	bcf PORTC,0
+	goto fin_sensor
+enciende:	
+	bsf PORTC,0
+fin_sensor:
+
+ENDM

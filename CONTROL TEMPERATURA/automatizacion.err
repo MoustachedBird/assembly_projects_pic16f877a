@@ -1,0 +1,60 @@
+Message[301] C:\PROGRAM FILES (X86)\MICROCHIP\MPASM SUITE\P16F877.INC 33 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Warning[205] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\EEPROM.MAC 52 : Found directive in column 1. (ENDM)
+Warning[205] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\EEPROM.MAC 76 : Found directive in column 1. (ENDM)
+Warning[205] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\EEPROM.MAC 91 : Found directive in column 1. (ENDM)
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 40 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 44 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 49 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 56 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 61 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 169 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 177 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 179 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 184 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 186 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 191 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 193 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 198 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 200 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 205 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 207 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 212 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 214 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 241 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 391 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 393 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 398 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 400 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 405 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 407 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 412 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 414 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 466 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 468 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 473 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 475 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 480 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 482 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 487 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 489 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\MACROS_LCD.MAC 288 : Found label after column 1. (Direccion_Hilera)
+Warning[207] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\MACROS_LCD.MAC 288 : Found label after column 1. (Direccion_Hilera)
+Warning[207] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\MACROS_LCD.MAC 288 : Found label after column 1. (Direccion_Hilera)
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 771 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 777 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 783 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 789 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 795 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 801 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 808 : Found label after column 1. (EEWR)
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 810 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 811 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 813 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 815 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 816 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 818 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 820 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 826 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 827 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\AUTOMATIZACION.ASM 829 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\YEUCL\DESKTOP\BUSSINES\PIC CONTROL TEMPERATURA\ASM PIC16F877A\LCD_4BITS_PORTB.INC 50 : Register in operand not in bank 0.  Ensure that bank bits are correct.
